@@ -2,11 +2,12 @@
 {% extends "base_generic.html" %}
 
 {% block title %}
-    <title>Subida | TFG </title>
+    <title>Subida de datos </title>
 {% endblock %}
 
 {% block content %}
-    <h1>Subir Archivo RDF</h1>
+    <div id="cabecera-subida"> <h1>Subir Archivo RDF</h1> </div>
+
 
     <!-- Formulario -->
     <form method="post" enctype="multipart/form-data" id="form-subida">
@@ -18,5 +19,23 @@
     <!-- Mensajes correcto e incorrecto -->
     {% if message %} <p class="correcto">{{ message }}</p> {% endif %}
     {% if error %} <p class="error">{{ error }}</p> {% endif %}
+
+    <!-- Pantalla de carga como creando_json -->
+    <div id="pantalla-carga" class="loading-container" style="display:none;">
+        <h2>Subiendo conjunto de datos...</h2>
+        <p>Esta operación puede tardar unos minutos.</p>
+        <p id="loading-message">Enviando datos al servidor...</p>
+    </div>
+
+    <script>
+        document.getElementById("form-subida").addEventListener("submit", function () {
+            // Ocultar formulario y título
+            this.style.display = "none";
+            document.getElementById("cabecera-subida").style.display = "none";
+    
+            // Mostrar pantalla de carga creada arriba
+            document.getElementById("pantalla-carga").style.display = "block";
+        });
+    </script>    
 
 {% endblock %}
