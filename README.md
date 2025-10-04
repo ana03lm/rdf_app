@@ -45,8 +45,8 @@ Java es necesario para que funcione Apache Jena Fuseki. En el enlace incluido se
 ### 1. Clonar el repositorio
 En primer lugar, abre una terminal y ejecuta: 
 ```bash
-git clone https://github.com/ana03lm/tfg_app.git
-cd tfg_app
+git clone https://github.com/ana03lm/rdf_app.git
+cd rdf_app
 ````
 Esto descargará todos los archivos necesarios en tu ordenador.
 
@@ -250,3 +250,4 @@ Este proyecto está disponible bajo la licencia Creative Commons Zero v1.0 Unive
 ## Autoría
 Aplicación desarrollada como parte del Trabajo Fin de Grado del Grado en Gestión de la Información y Contenidos Digitales (Universidad de Murcia).
 Autora: Ana López Morales
+
