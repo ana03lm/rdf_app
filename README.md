@@ -96,7 +96,7 @@ Si ves el panel de Fuseki, ¡todo está funcionando correctamente!
 ### 5. Ejecutar la aplicación Django
 Vuelve a la terminal donde clonaste el repositorio (o abre una nueva y ve a la carpeta del proyecto):
 ```bash
-cd ruta/tfg_app
+cd ruta/rdf_app
 ```
 Asegúrate de que el entorno virtual esté activado con:
 > En Windows:
@@ -107,9 +107,9 @@ Asegúrate de que el entorno virtual esté activado con:
 > ```bash
 > ./fuseki-server --update --tdb2
 > ```
-Dirígete a la subcarpeta tfg_project:
+Dirígete a la subcarpeta rdf_project:
 ```bash
-cd tfg_project
+cd rdf_project
 ```
 Ejecuta:
 ```bash
@@ -143,7 +143,7 @@ Cada vez que apagues el ordenador o cierres todo, necesitarás replicar parte de
 1. Abre otra terminal.
 2. Navega a la carpeta del proyecto:
    ```bash
-   cd ruta/tfg_app
+   cd ruta/rdf_app
    ```
 3. Activa el entorno virtual:
 > En Windows:
@@ -154,9 +154,9 @@ Cada vez que apagues el ordenador o cierres todo, necesitarás replicar parte de
 > ```bash
 > source venv/bin/activate
 > ```
-4. Navega a la subcarpeta tfg_project:
+4. Navega a la subcarpeta rdf_project:
    ```bash
-   cd tfg_project
+   cd rdf_project
    ```
 5. Ejecuta:
    ```bash
@@ -250,4 +250,5 @@ Este proyecto está disponible bajo la licencia Creative Commons Zero v1.0 Unive
 ## Autoría
 Aplicación desarrollada como parte del Trabajo Fin de Grado del Grado en Gestión de la Información y Contenidos Digitales (Universidad de Murcia).
 Autora: Ana López Morales
+
 
